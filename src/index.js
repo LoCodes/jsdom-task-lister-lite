@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // input in DOM
 
 
-
-    // OR //
     const taskItem = document.createElement("li");
     taskItem.innerText = newTask
 
@@ -28,54 +26,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   })
 
+
+  // delete BUTTON and action
+
   const createButton = task => {
     const btn = document.createElement('button');
      btn.innerText = "X";
  
      task.appendChild(btn);
-     btn.addEventListener('click', (e) => e.target.parentNode.remove(), false);
+     btn.addEventListener('click', (e) => e.target.parentNode.remove(), false);  // delete action 
  }
 
- // need to be able to delete still 
 
-//  const deleteTask = (e) => {
-//   const selectedTask = e.target.parentElement;
-//   theList.removeChild(selectedTask);
-// }
-
-
-  // taskList.addEventListener('click', function(event){
-
-  // })
-
-
-
-
-  //parentNode.appendChild(childNode);
-  // theList.appendChild(newTask);
-
-
-
-
-
-
-  //   let inputTag = document.getElementById("new-task-description");
-
-  //   let inputValue = inputTag.value;
-
-  //   let newLi = document.createElement('li');
-  //   newLi.innerText = inputValue;
-
-
-  //   let ulTag = document.querySelector('ul#tasks');
-  //   ulTag.append(newLi);
-  //   inputTag.value = '';
-  // }
 
 });
 
 
-// id="create-task-form"
-// id="new-task-description"
-
-// id="list"
